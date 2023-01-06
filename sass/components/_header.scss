@@ -1,0 +1,30 @@
+.header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+    &_nav-list {
+        display: flex;
+        gap: 46px;
+    }
+    &__header-logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+.logo__studio--black {
+    color: var(--black);
+}
