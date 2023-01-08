@@ -1,3 +1,8 @@
+@use './utils/_variables' as *;
+@use './utils/_globals';
 @import './components/header';
-@import './globals';
-@use './utils/variables.scss' as *;
+@import './components/logo';
+@import './components/order';
+@import './components/jobs';
+@import './components/our-clients';
+@import './components/footer-wrapper';
