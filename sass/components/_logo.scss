@@ -7,11 +7,10 @@
     color: $primary-color;
     text-decoration: none;
 
-    &__studio--black {
+    &__studio {
         color: $black;
-    }
-
-    &__studio--white {
-        color: $white;
+        &--white {
+            color: $white;
+        }
     }
 }

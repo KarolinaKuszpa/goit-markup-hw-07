@@ -25,12 +25,12 @@
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <a href="index.html" class="logo"
-                        >Web<span class="logo__studio--black">Studio</span></a
+                        >Web<span class="logo__studio">Studio</span></a
                     >
                     <ul class="header__nav-list">
                         <li>
                             <a
-                                class="header__nav-item header__nav-item-link-active"
+                                class="header__nav-item header__nav-item--active"
                                 href="#"
                                 >Agencja</a
                             >
@@ -82,24 +82,18 @@
             </div>
         </header>
         <main>
-            <section class="order__dark-bg">
-                <div class="order__section">
-                    <div class="order__wrapper">
-                        <h1 class="order__text">
-                            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-                        </h1>
-                        <button
-                            class="order__btn"
-                            type="button"
-                            data-modal-open
-                        >
-                            Zamów usługę
-                        </button>
-                    </div>
+            <section class="section order">
+                <div class="container order__wrapper">
+                    <h1 class="order__text">
+                        EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+                    </h1>
+                    <button class="order__btn" type="button" data-modal-open>
+                        Zamów usługę
+                    </button>
                 </div>
             </section>
-            <section class="articles">
-                <div class="articles__wrapper">
+            <section class="section articles">
+                <div class="container articles__wrapper">
                     <ul class="articles__item">
                         <li>
                             <div class="articles__icons">
@@ -180,8 +174,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="jobs">
-                <div class="jobs__wrapper">
+            <section class="section jobs">
+                <div class="container jobs__wrapper">
                     <h2 class="jobs__text">Czym się zajmujemy</h2>
                     <ul class="jobs__list">
                         <li class="jobs__list-item">
@@ -221,8 +215,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="our-team">
-                <div class="our-team__wrapper">
+            <section class="section our-team">
+                <div class="container our-team__wrapper">
                     <h2 class="our-team__text">Nasz zespół</h2>
                     <ul class="our-team__list">
                         <li>
@@ -516,12 +510,12 @@
                     </ul>
                 </div>
             </section>
-            <section class="our-clients">
-                <div class="our-clients__wrapper">
+            <section class="section our-clients">
+                <div class="container our-clients__wrapper">
                     <h2 class="our-clients__text">Nasi klienci</h2>
                     <div class="our-clients__list">
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -533,7 +527,7 @@
                             ></use>
                         </svg>
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -545,7 +539,7 @@
                             ></use>
                         </svg>
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -557,7 +551,7 @@
                             ></use>
                         </svg>
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -569,7 +563,7 @@
                             ></use>
                         </svg>
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -581,7 +575,7 @@
                             ></use>
                         </svg>
                         <svg
-                            class="our-clients__style"
+                            class="our-clients__image"
                             width="170"
                             height="92"
                             tabindex="0"
@@ -596,28 +590,32 @@
                 </div>
             </section>
         </main>
-
         <footer class="footer-wrapper">
-        <div class="footer-wrapper__dark-bg">
-            <section class="footer-wrapper__wrapper">
+            <div class="footer-wrapper__wrapper">
                 <div>
                     <a class="logo"
-                        >Web<span class="logo__studio--white">Studio</span></a
+                        >Web<span class="logo-studio logo__studio--white"
+                            >Studio</span
+                        ></a
                     >
                     <address class="footer-wrapper__address-wrapper">
-                        <ul class="footer-wrapper__adress-item">
+                        <ul class="footer-wrapper__address-item">
                             <li>
-                                <span class="footer-wrapper__text"> m.Warszawa, Aleje Jerozolimskie 21</span>
+                                <span class="footer-wrapper__text">
+                                    m.Warszawa, Aleje Jerozolimskie 21</span
+                                >
                             </li>
                             <li>
                                 <a
-                                    class="footer-wrapper__link--no-underline"
+                                    class="footer-wrapper__link"
                                     href="mailto:info@devstudio.com"
                                     >info@devstudio.com
                                 </a>
                             </li>
                             <li>
-                                <a class="footer-wrapper__link--no-underline" href="tel:48111111111"
+                                <a
+                                    class="footer-wrapper__link"
+                                    href="tel:48111111111"
                                     >tel:+48111111111
                                 </a>
                             </li>
@@ -628,8 +626,15 @@
                     <p class="footer-wrapper__join-us-text">DOŁĄCZ DO NAS</p>
                     <ul class="footer-wrapper__join-us-icons">
                         <li>
-                            <a class="footer-wrapper__join-us-icons-item" href="#">
-                                <svg class="footer-wrapper__join-us-style"width="20" height="20">
+                            <a
+                                class="footer-wrapper__join-us-icons-item"
+                                href="#"
+                            >
+                                <svg
+                                    class="footer-wrapper__join-us-style"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-instagram"
                                     ></use>
@@ -637,8 +642,15 @@
                             </a>
                         </li>
                         <li>
-                            <a class="footer-wrapper__join-us-icons-item"href="#">
-                                <svg class="footer-wrapper__join-us-style" width="20" height="20">
+                            <a
+                                class="footer-wrapper__join-us-icons-item"
+                                href="#"
+                            >
+                                <svg
+                                    class="footer-wrapper__join-us-style"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-twitter"
                                     ></use>
@@ -646,8 +658,15 @@
                             </a>
                         </li>
                         <li>
-                            <a class="footer-wrapper__join-us-icons-item"href="#">
-                                <svg class="footer-wrapper__join-us-style" width="20" height="20">
+                            <a
+                                class="footer-wrapper__join-us-icons-item"
+                                href="#"
+                            >
+                                <svg
+                                    class="footer-wrapper__join-us-style"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-facebook"
                                     ></use>
@@ -655,8 +674,15 @@
                             </a>
                         </li>
                         <li>
-                            <a class="footer-wrapper__join-us-icons-item"href="#">
-                                <svg class="footer-wrapper__join-us-style" width="20" height="20">
+                            <a
+                                class="footer-wrapper__join-us-icons-item"
+                                href="#"
+                            >
+                                <svg
+                                    class="footer-wrapper__join-us-style"
+                                    width="20"
+                                    height="20"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-linkedin"
                                     ></use>
@@ -666,12 +692,26 @@
                     </ul>
                 </div>
                 <div class="footer-wrapper__footer-newslatter">
-                    <p class="footer-wrapper__newslater-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
+                    <p class="footer-wrapper__newslater-text">
+                        ZAPISZ SIĘ DO NEWSLETTERA
+                    </p>
                     <form class="footer-wrapper__sign-in-box">
-                        <input class="footer-wrapper__input" type="email" name="email" placeholder="E-mail" />
-                        <button class="footer-wrapper__button-subscribe" type="submit">
+                        <input
+                            class="footer-wrapper__input"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                        />
+                        <button
+                            class="footer-wrapper__button-subscribe"
+                            type="submit"
+                        >
                             Zapisz się
-                            <svg class="footer-wrapper__icon-send" width="24" height="24">
+                            <svg
+                                class="footer-wrapper__icon-send"
+                                width="24"
+                                height="24"
+                            >
                                 <use
                                     href="./images/icons.svg#icon-icon-send"
                                 ></use>
@@ -679,54 +719,70 @@
                         </button>
                     </form>
                 </div>
-            </section>
+            </div>
         </footer>
-        <div class="footer-wrapper__backdrop--is-hidden" data-modal>
-            <div class="footer-wrapper__modal">
-                <button class="footer-wrapper__close-button" data-modal-close>&times;</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal__close-button" data-modal-close>
+                    &times;
+                </button>
                 <form>
-                    <p class="footer-wrapper__title-modal">
+                    <p class="modal__title-modal">
                         Zostaw swoje dane w formularzu poniżej
                     </p>
-                    <label class="footer-wrapper__user-name">Imię</label>
-                    <div class="footer-wrapper__input-box">
-                        <input class="footer-wrapper__form-input" type="text" name="name" />
-                        <svg class="footer-wrapper__svg-form" width="18px" height="18px">
+                    <label class="modal__user-name">Imię</label>
+                    <div class="modal__input-box">
+                        <input
+                            class="modal__form-input"
+                            type="text"
+                            name="name"
+                        />
+                        <svg class="modal__svg-form" width="18px" height="18px">
                             <use
                                 href="./images/icons.svg#icon-person-black"
                             ></use>
                         </svg>
                     </div>
-                    <label class="footer-wrapper__user-name">Telephone</label>
-                    <div class="footer-wrapper__input-box">
-                        <input class="footer-wrapper__form-input" type="text" name="name" />
-                        <svg class="footer-wrapper__svg-form" width="18px" height="18px">
+                    <label class="modal__user-name">Telephone</label>
+                    <div class="modal__input-box">
+                        <input
+                            class="modal__form-input"
+                            type="text"
+                            name="name"
+                        />
+                        <svg class="modal__svg-form" width="18px" height="18px">
                             <use
                                 href="./images/icons.svg#icon-phone-black"
                             ></use>
                         </svg>
                     </div>
-                    <label class="footer-wrapper__user-name">E-mail</label>
-                    <div class="footer-wrapper__input-box">
-                        <input class="footer-wrapper__form-input" type="text" name="name" />
-                        <svg class="footer-wrapper__svg-form" width="18px" height="18px">
+                    <label class="modal__user-name">E-mail</label>
+                    <div class="modal__input-box">
+                        <input
+                            class="modal__form-input"
+                            type="text"
+                            name="name"
+                        />
+                        <svg class="modal__svg-form" width="18px" height="18px">
                             <use
                                 href="./images/icons.svg#icon-email-black"
                             ></use>
                         </svg>
                     </div>
-                    <label class="footer-wrapper__user-name-placeholder">Komentarz</label>
+                    <label class="modal__user-name-placeholder"
+                        >Komentarz</label
+                    >
                     <textarea
-                        class="footer-wrapper__comment"
+                        class="modal__comment"
                         name="Comment"
                         placeholder="Wprowadź tekst"
                     ></textarea>
                     <label>
-                        <input class="footer-wrapper__hidden-checkbox" type="checkbox" />
-                        <div class="footer-wrapper__acceptation-box">
-                            <div class="footer-wrapper__custom-checkbox">
+                        <input class="modal__hidden-checkbox" type="checkbox" />
+                        <div class="modal__acceptation-box">
+                            <div class="modal__custom-checkbox">
                                 <svg
-                                    class="footer-wrapper__checkbox-img"
+                                    class="modal__checkbox-img"
                                     width="16px"
                                     height="15px"
                                 >
@@ -735,16 +791,20 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <span class="footer-wrapper__acceptation-text"
+                            <span class="modal__acceptation-text"
                                 >Oświadczam iż akceptuję
-                                <a class="footer-wrapper__statute" href="#"> Regulamin</a> i
-                                <a class="footer-wrapper__statute" href="#">
+                                <a class="modal__statute" href="#">
+                                    Regulamin</a
+                                >
+                                i
+                                <a class="modal__statute" href="#">
                                     Politykę Prywatności.</a
                                 ></span
                             >
                         </div>
-                        <button class="footer-wrapper__button-form" type="submit"></button>
-                        <span class="footer-wrapper__button-send-it">Wyślij</span>
+                        <button class="modal__button-form" type="submit">
+                            Wyślij
+                        </button>
                     </label>
                 </form>
             </div>
