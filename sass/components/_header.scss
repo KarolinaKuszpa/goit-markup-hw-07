@@ -43,9 +43,11 @@
         color: $black;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &____nav-item:is(:hover, :focus) {
-        color: $primary-color;
+
+    &__nav-item:is(:hover, :focus) {
+        color: var(--primary-color);
     }
+
     &__nav-item--active {
         color: $primary-color;
     }

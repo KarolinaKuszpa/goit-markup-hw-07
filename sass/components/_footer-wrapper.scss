@@ -77,7 +77,7 @@
     &__join-us-icons-item > &__join-us-style {
         fill: var(--white);
     }
-    &__newslater-text {
+    &__newslatter-text {
         color: #ffffff;
         font-weight: 700;
         font-size: 14px;
@@ -92,6 +92,10 @@
         align-items: center;
         gap: 12px;
     }
+    ::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
     &__input {
         background-color: #2f303a;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -117,6 +121,7 @@
         justify-content: space-between;
         letter-spacing: 0, 06em;
         white-space: nowrap;
+        cursor: pointer;
     }
     &__icon-send {
         fill: #ffffff;

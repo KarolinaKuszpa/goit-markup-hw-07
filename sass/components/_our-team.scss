@@ -65,7 +65,7 @@
         gap: 10px;
         justify-content: center;
     }
-    &__item {
+    &__icons-circle {
         width: 44px;
         height: 44px;
         display: flex;
@@ -74,16 +74,16 @@
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__icons-item {
+    &__icons-icon {
         fill: #afb1b8;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__item:hover > &__icons-item,
-    &__ > &__item:focus > &__icons-item {
+    &__icons-circle:hover > &__icons-icon,
+    &__icons-circle:focus > &__icons-icon {
         fill: $white;
     }
 
-    &__item:hover,
+    &__icons-circle:hover,
     :focus {
         background-color: $primary-color;
     }
